@@ -39,7 +39,7 @@ function CreditCardForm() {
 
   return (
     <section>
-      <h2>Credit Card Validator</h2>
+      <h1>Credit Card Validator</h1>
       <form method='POST' onSubmit={handleSubmit}>
         <label className='Form-label'>
           <span className='Form-span'>Card Number</span>
@@ -48,9 +48,7 @@ function CreditCardForm() {
             name='cardNumber'
             min='0'
             placeholder='1234 5678 3456 7890'
-            className={`Form-input-width Form-input ${
-              isCardNumberValid ? '' : 'Form-invalid-input'
-            }`}
+            className={`Form-input-width Form-input ${isCardNumberValid ? '' : 'Form-invalid-input'}`}
             required
           />
         </label>
@@ -92,7 +90,7 @@ function CreditCardForm() {
           Validate
         </button>
       </form>
-      <p className=''>{validationText}</p>
+      <p className='Form-p'>{validationText}</p>
     </section>
   );
 }
