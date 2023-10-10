@@ -4,12 +4,32 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type='number'] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
-.Add-label {
-    display: block;
-    margin: 1rem 0;
-    width: 20rem;
-  }
+.Form-span {
+  display: block;
+}
+
+.Form-label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.Form-input{
+  width: 2rem;
+  border: black solid 1px;
+  border-radius: 2px;
+}
+
+.Form-input-width {
+  width: 10rem;
+}
+
+.Form-invalid-input {
+  border: red solid 1px;
+  border-radius: 2px;
+  color: red;
+}
